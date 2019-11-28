@@ -13,7 +13,7 @@ import pandas as pd
 
 app = Flask(__name__)
 #creating database and connecting server of database with flask using sqlalchemy
-DB_URI = 'postgresql+psycopg2://postgres:Arya@123@localhost/hotel_register'
+DB_URI = 'postgresql+psycopg2://username:password@localhost/database'
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URI
@@ -55,8 +55,8 @@ def send_email(reciever_email,sender_email,password,message,subject):
         server.quit() 
 
 def send_sms(message,phone_no):
-    account_sid = 'AC5f5fe8cabdabc0bdf71b6311ea######'  #get your own account id for twilio
-    auth_token = '4c887a5cb4c18bfccaa37c934e#####'      #auth token for the password
+    account_sid = 'AC5##########################'  #get your own account id for twilio
+    auth_token = '##############################'  #auth token for the password
     client = Client(account_sid, auth_token)
     message = client.messages.create(
                      body=message,
