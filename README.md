@@ -101,7 +101,7 @@ def send_sms(message,phone_no):
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg)
 - Message to Host
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/smstohost.jpeg)
-- Worklow can be viewed using this raw mhtml document (windows steps recoder was used):- [Workflow Recording](https://raw.githubusercontent.com/as791/Enrty-Managment-Software/master/workflow/Recording_20191128_1930.mht)
+- Worklow can be viewed by downloading this mhtml document (windows steps recoder was used):- [Workflow Recording](https://github.com/as791/Enrty-Managment-Software/tree/master/workflow)
 
 ### License
 [MIT License](https://choosealicense.com/licenses/mit/)
