@@ -1,16 +1,16 @@
 # Enrty Managment Software
 This application is built using Python Flask framework to capture the visitor details that we have in the offices. This application saves name, email id, phone number of visitor and host in databases with check in and check out timestamp of the visitor. 
 At the back end, once the user enters the information in the form, the backend should store all of the information with time stamp of the entry.This trigger an email and an SMS to the host informing him of the details of the visitor. There is also a provision of the checkout time which is feed to database once the visitor go and checkout manaully using his name, and same email and phone number entered during checking in. This triggers an email to the visitor with the complete form which includes:
-* Name     
-* Phone
-* Check in time
-* Check out time
-* Host name
-* Address visited
+- Name     
+- Phone
+- Check in time
+- Check out time
+- Host name
+- Address visited
 
 ## Installation
 Before Navigating the application user must install the required libraries using following command
-``` python
+``` bash
 pip install -r requirements.txt
 ```
 
@@ -87,12 +87,20 @@ def send_sms(message,phone_no):
 * For windows users create a virtual environment, then run the application OR users can also use sublime text or othe text editor to run the .py file.
 
 ### Demonstrated Visuals
-![[Home Page] (/Screenshots/home%20page.png]
-![About Us] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/about%20us%20page.png]
-![Check In Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkin%20page.png]
-![Check Out Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkout%20page.png]
-![Email To Host] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtohost.jpeg]
-![Email to Visitor] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg]
-![SMS to Host] (/Screenshots/smstohost.jpeg)
-![SQL Table Demonstration] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sql%20table.png]
+- Home Page
+![](/Screenshots/home%20page.png)
+- About Us Page
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/about%20us%20page.png)
+- Check-in Page
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkin%20page.png)
+- Check-out Page
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkout%20page.png)
+- Email to Host Preview
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtohost.jpeg)
+- Email to Visitor Preview
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg)
+- SMS to Host
+![](/Screenshots/smstohost.jpeg)
+- Workflow 
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sql%20table.png)
 
