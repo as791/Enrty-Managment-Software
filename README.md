@@ -87,12 +87,12 @@ def send_sms(message,phone_no):
 * For windows users create a virtual environment, then run the application OR users can also use sublime text or othe text editor to run the .py file.
 
 ### Demonstrated Visuals
-![Home Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/homepage.png]
-![About Us] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/aboutuspage.png]
-![Check In Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkinpage.png]
-![Check Out Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkoutpage.png]
+![[Home Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/home page.png]
+![About Us] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/about us% page.png]
+![Check In Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkin page.png]
+![Check Out Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkout page.png]
 ![Email To Host] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtohost.jpeg]
 ![Email to Visitor] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg]
 ![SMS to Host] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/smstohost.jpeg]
-![SQL Table Demonstration] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sqltable.png]
+![SQL Table Demonstration] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sql table.png]
 
