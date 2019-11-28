@@ -73,8 +73,8 @@ def send_email(reciever_email,sender_email,password,message,subject):
 * Use authorized account sid, and token to connect to your personlize Twilio server. 
 ```python
 def send_sms(message,phone_no):
-    account_sid = 'AC5f5fe8cabdabc0bdf71b6311ea8419e6'
-    auth_token = '4c887a5cb4c18bfccaa37c934e4e5bf6'
+    account_sid = 'AC5############################'
+    auth_token = '################################'
     client = Client(account_sid, auth_token)
     message = client.messages.create(
                      body=message,
