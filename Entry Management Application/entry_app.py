@@ -12,7 +12,7 @@ from email.mime.text import MIMEText
 import pandas as pd
 
 app = Flask(__name__)
-
+#creating database and connecting server of database with flask using sqlalchemy
 DB_URI = 'postgresql+psycopg2://postgres:Arya@123@localhost/hotel_register'
 
 
@@ -23,6 +23,15 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # silence the deprecation wa
 sql = SQLAlchemy(app)
 engine = sql.create_engine(DB_URI,{})
 connection = engine.raw_connection()
+
+#Creating table first
+# cur  = connection.cursor()
+
+# # # Execute query
+# cur.execute("CREATE TABLE visitor1(Entry_date VARCHAR(50), Host_name VARCHAR(255), Host_email VARCHAR(255), Host_contact_no VARCHAR(12), Visitor_name VARCHAR(255), Visitor_email VARCHAR(255), Visitor_contact_no VARCHAR(12), check_in_time VARCHAR(50), check_out_time VARCHAR(50))")
+
+# # Commit to DB
+# connection.commit()
 
 def send_email(reciever_email,sender_email,password,message,subject):
     msg = MIMEMultipart('alternative')
@@ -39,7 +48,6 @@ def send_email(reciever_email,sender_email,password,message,subject):
         server.starttls() # Secure the connection
         server.login(sender_email, password)
         server.sendmail(sender_email,reciever_email,msg.as_string())
-        # TODO: Send email here
     except Exception as e:
         # Print any error messages to stdout
         print(e)
@@ -47,23 +55,14 @@ def send_email(reciever_email,sender_email,password,message,subject):
         server.quit() 
 
 def send_sms(message,phone_no):
-    account_sid = 'AC5f5fe8cabdabc0bdf71b6311ea8419e6'
-    auth_token = '4c887a5cb4c18bfccaa37c934e4e5bf6'
+    account_sid = 'AC5f5fe8cabdabc0bdf71b6311ea######'  #get your own account id for twilio
+    auth_token = '4c887a5cb4c18bfccaa37c934e#####'      #auth token for the password
     client = Client(account_sid, auth_token)
     message = client.messages.create(
                      body=message,
-                     from_='+12024105519',
+                     from_='+12024105519', #first create your own sending phone number using twilio 
                      to=phone_no
                  );
-#Creating table first
-# cur  = connection.cursor()
-
-# # # Execute query
-# cur.execute("CREATE TABLE visitor1(Entry_date VARCHAR(50), Host_name VARCHAR(255), Host_email VARCHAR(255), Host_contact_no VARCHAR(12), Visitor_name VARCHAR(255), Visitor_email VARCHAR(255), Visitor_contact_no VARCHAR(12), check_in_time VARCHAR(50), check_out_time VARCHAR(50))")
-
-# # Commit to DB
-# connection.commit()
-
 # Home
 @app.route('/')
 def home():
@@ -130,7 +129,7 @@ def checkin():
                         </head>
                         </html>'''.format(visitor_name,visitor_phone_no,visitor_email,check_in_time)
         print(host_email)
-        send_email(host_email,'aryamansinha123@gmail.com','8305018914',message1,subject)
+        send_email(host_email,'aryamansinha123@gmail.com','#########',message1,subject)
         send_sms(message,'+'+host_phone_no)  #host_phone_no should be twilio verified !!
 
         return redirect(url_for('home'))
@@ -157,7 +156,7 @@ def checkout():
         if len(check_cur)>0:
         # Get stored hash
             data = cur.fetchone()
-            visitor_phone_no = data[6]
+            visitor_phone_no = data[6]  #tuple key for the fetched row check accordingly
             visitor_email = data[5]
             check_in_time = data[8]
             # Compare Details
@@ -207,7 +206,7 @@ def checkout():
                         </head>
                         </html>'''.format(name,visitor_phone_no,check_in_time,check_out_time,data[1],address)
                 
-                send_email(visitor_email,'aryamansinha123@gmail.com','8305018914',message1,subject)
+                send_email(visitor_email,'aryamansinha123@gmail.com','#########',message1,subject)
 
                 return redirect(url_for('home'))
             else:
