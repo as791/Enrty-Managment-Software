@@ -99,7 +99,7 @@ def send_sms(message,phone_no):
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtohost.jpeg)
 - Email to Visitor Preview
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg)
-- SMS to Host
+- Message to Host
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/smstohost.jpeg)
 - Worklow can be viewed using this raw mhtml document (windows steps recoder was used):- [Workflow Recording](https://raw.githubusercontent.com/as791/Enrty-Managment-Software/master/workflow/Recording_20191128_1930.mht)
 
