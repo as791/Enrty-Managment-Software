@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form method='POST' action="" class="form-group">
+  <h1 class="h3 mb-3 font-weight-normal">Check Out Form</h1>
+   <div class = "form-group">
+  <label for="VisitorName" class="form-only">Name:</label>
+  <input type="text" name="VisitorName" class="form-control" pattern=".{1,50}" required title="1 to 50 characters">
+  <label for="VisitorEmail" class="form-only">Email:</label>
+  <input type="text" name="VisitorEmail" class="form-control"  pattern=".{6,50}" required title="6 to 50 characters">
+  <label for="VisitorPhoneNumber" class="form-only">Phone Number:</label>
+  <input type="text" name="VisitorPhoneNumber" class="form-control" pattern=".{11,12}" required title="11 to 12 characters">
+</div>
+  <button class="btn btn-primary" value="submit">Check Out</button>
+</form>
+{% endblock %}
