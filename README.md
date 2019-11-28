@@ -87,12 +87,12 @@ def send_sms(message,phone_no):
 * For windows users create a virtual environment, then run the application OR users can also use sublime text or othe text editor to run the .py file.
 
 ### Demonstrated Visuals
-![[Home Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/home%20page.png]
+![[Home Page] (/Screenshots/home%20page.png]
 ![About Us] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/about%20us%20page.png]
 ![Check In Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkin%20page.png]
 ![Check Out Page] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/checkout%20page.png]
 ![Email To Host] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtohost.jpeg]
 ![Email to Visitor] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg]
-![SMS to Host] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/smstohost.jpeg]
+![SMS to Host] (/Screenshots/smstohost.jpeg)
 ![SQL Table Demonstration] [https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sql%20table.png]
 
