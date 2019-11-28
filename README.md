@@ -88,7 +88,7 @@ def send_sms(message,phone_no):
 
 ### Demonstrated Visuals
 - Home Page
-![](/Screenshots/home%20page.png)
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/home%20page.png)
 - About Us Page
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/about%20us%20page.png)
 - Check-in Page
@@ -100,10 +100,12 @@ def send_sms(message,phone_no):
 - Email to Visitor Preview
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg)
 - SMS to Host
-![](/Screenshots/smstohost.jpeg)
-- Worklow can be viewed using this raw mhtml document :- 
+![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/smstohost.jpeg)
+- Worklow can be viewed using this raw mhtml document (windows steps recoder was used):- [Workflow Recording](https://raw.githubusercontent.com/as791/Enrty-Managment-Software/master/workflow/Recording_20191128_1930.mht)
+
 ### License
 [MIT License](https://choosealicense.com/licenses/mit/)
+
 ### Some Key Points To Note
 - Name for both Host and Visitor is limited to 50 characters.
 - Phone number input is to be given with country code without '+' sign. 
