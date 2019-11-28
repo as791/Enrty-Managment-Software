@@ -101,6 +101,10 @@ def send_sms(message,phone_no):
 ![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/emailtovisitor.jpeg)
 - SMS to Host
 ![](/Screenshots/smstohost.jpeg)
-- Workflow 
-![](https://github.com/as791/Enrty-Managment-Software/blob/master/Screenshots/sql%20table.png)
-
+- Worklow can be viewed using this raw mhtml document :- 
+### License
+[MIT License](https://choosealicense.com/licenses/mit/)
+### Some Key Points To Note
+- Name for both Host and Visitor is limited to 50 characters.
+- Phone number input is to be given with country code without '+' sign. 
+- I have used used zone wise time and visitor has no need to give the check in or check out time, it is handeled automatically using datetime library, as it is more convinient for the visitor.
