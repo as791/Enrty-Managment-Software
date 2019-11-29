@@ -84,7 +84,7 @@ def send_sms(message,phone_no):
 ```
 ### How to run the application?
 * First keep all the files in same directory.
-* For windows users create a virtual environment, then run the application OR users can also use sublime text or othe text editor to run the .py file.
+* For windows users create a virtual environment, then run the application OR users can also use sublime text or any other text editor to run the .py file.
 
 ### Demonstrated Visuals
 - Home Page
