@@ -1,4 +1,4 @@
-# Enrty Managment Software
+# Entry Managment Software
 This application is built using Python Flask framework to capture the visitor details that we have in the offices. This application saves name, email id, phone number of visitor and host in databases with check in and check out timestamp of the visitor. 
 At the back end, once the user enters the information in the form, the backend should store all of the information with time stamp of the entry.This trigger an email and an SMS to the host informing him of the details of the visitor. There is also a provision of the checkout time which is feed to database once the visitor go and checkout manaully using his name, and same email and phone number entered during checking in. This triggers an email to the visitor with the complete form which includes:
 - Name     
